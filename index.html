@@ -19,7 +19,11 @@
   </style>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/fc98867bd2.js" crossorigin="anonymous"></script>
-
+<style>
+  .bg-img{
+    background-image: url(./assets/bg.jpg);
+  }
+</style>
   <!-- external design -->
   <script>
     tailwind.config = {
@@ -63,7 +67,7 @@
         </button>
 
         <div class="dropdown">
-          <div  class="lg:hidden">
+          <div class="lg:hidden">
             <i class="fa-solid fa-bars"></i>
           </div>
 
@@ -213,17 +217,18 @@
           </div>
           <!-- second cols -->
           <div class="grid grid-cols-1 lg:grid-cols-12 space-x-4 lg:space-y-0 space-y-4 mx-4">
-            <div class="hidden sm:block col-span-3 p-4 px-4 py-4 lg:py-6 border border-gray-100 mx-3 rounded-2xl shadow-2xl"><img class="w-full"
-              src="assets/img3.png" alt="">
-          </div>
-            <div class="lg:hidden col-span-3 p-4 px-4 py-4 lg:py-6 border border-gray-100 mx-3 rounded-2xl shadow-2xl"><img class="w-full"
-              src="assets/img5.png" alt="">
-          </div>
+            <div
+              class="hidden sm:block col-span-3 p-4 px-4 py-4 lg:py-6 border border-gray-100 mx-3 rounded-2xl shadow-2xl">
+              <img class="w-full" src="assets/img3.png" alt="">
+            </div>
+            <div class="lg:hidden col-span-3 p-4 px-4 py-4 lg:py-6 border border-gray-100 mx-3 rounded-2xl shadow-2xl">
+              <img class="w-full" src="assets/img5.png" alt="">
+            </div>
             <div class="col-span-6 p-6 lg:flex border border-gray-100 shadow-2xl rounded-2xl ">
               <img class="w-full lg:w-auto" src="assets/img4.png" alt="">
               <div class="lg:mx-5 ">
                 <h5 class="text-lg mt-2 lg:text-2xl font-extrabold mb-4">Commercial</h5>
-                <p class="font-medium text-xs lg:text-base">The barn house captivates with  its blend of rustic
+                <p class="font-medium text-xs lg:text-base">The barn house captivates with its blend of rustic
                   charm and modern.
                 </p>
                 <button class="font-extrabold text-lg lg:text-xl mt-3 lg:mt-5"> View Details <i
@@ -231,16 +236,57 @@
               </div>
             </div>
             <div class="grid grid-cols-1 col-span-3 space-y-5 lg:space-y-0">
-              <div class="lg:hidden sm:contents col-span-3 p-4 px-4 py-4 lg:py-6 rounded-2xl shadow-2xl"><img class="w-full"
-                src="assets/img3.png" alt="">
+              <div class="lg:hidden sm:contents col-span-3 p-4 px-4 py-4 lg:py-6 rounded-2xl shadow-2xl"><img
+                  class="w-full" src="assets/img3.png" alt="">
+              </div>
+              <div class="col-span-3 border  p-4 px-4 lg:px-4 py-4 lg:py-4  rounded-2xl shadow-2xl w-full"><img
+                  class="w-full" src="assets/img5.png" alt="">
+              </div>
             </div>
-              <div class="col-span-3 border  p-4 px-4 lg:px-4 py-4 lg:py-4  rounded-2xl shadow-2xl w-full"><img class="w-full"
-                src="assets/img5.png" alt="">
-            </div>
-            </div>
-          
+
           </div>
         </div>
+      </div>
+    </section>
+    <!-- form section-->
+    <section class="bg-img">
+      <div class="md:container mx-auto">
+        <div class="text-center">
+          <button class="btn  rounded-full bg-[#ABEF5F] bg-opacity-20 mb-4"><i
+              class="fa-solid fa-arrow-right "></i>Let’s Connect</button>
+          <h2 class="font-bold text-2xl lg:text-4xl mb-3">Let’s Discuss Next Project</h2>
+          <p class="font-medium text-xs lg:text-base mb-5">The barn house captivates with its blend of rustic charm and
+            modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!-- form started -->
+        <form class="lg:mx-0 mx-8 space-y-4">
+          <div class="lg:flex justify-center lg:m-8 lg:space-x-5 lg:space-y-0 space-y-4">
+            <label class="rounded-full input  flex items-center lg:w-2/5 shadow-2xl bg-white border border-gray-100">
+              <input type="text" class="grow" placeholder="First Name*" />
+            </label>
+
+            <label class="rounded-full input  flex items-center lg:w-2/5 shadow-2xl bg-white border border-gray-100 ">
+              <input type="text" class="grow" placeholder="Last Name*" />
+            </label>
+
+          </div>
+          <div class="lg:flex justify-center lg:m-6 lg:space-x-5 lg:space-y-0 space-y-4 ">
+            <label class="rounded-full input  flex items-center lg:w-2/5 shadow-2xl bg-white border border-gray-100">
+              <input type="text" class="grow" placeholder="Phone Number*" />
+            </label>
+
+            <label class="rounded-full input flex items-center lg:w-2/5 shadow-2xl bg-white border border-gray-100">
+              <input type="text" class="grow" placeholder="Email Number*" />
+            </label>
+          </div>
+          <div class="lg:flex justify-center lg:m-6 lg:mt-0 mt-4">
+            <label class="rounded-2xl input  flex items-center lg:w-4/5  lg:h-60 h-36  shadow-2xl bg-white border border-gray-100">
+              <input type="text" class="grow" placeholder=""  />
+            </label>
+
+          </div>
+        </form>
+        
       </div>
     </section>
   </main>
